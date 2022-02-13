@@ -34,3 +34,14 @@ else:
   cost_drone = weight * 14.25
 
 print("Drone Shipping: $", cost_drone)
+
+#Cheapest option
+
+if cost_ground < cost_ground_prem and cost_ground <cost_drone:
+  cheapest_option = "Ground Shipping"
+elif cost_ground_prem < cost_ground and cost_ground_prem <cost_drone:
+  cheapest_option = "Ground Shipping Premium"
+else:
+  cheapest_option = "Drone Shipping"
+
+print('Cheapest option is',cheapest_option)
